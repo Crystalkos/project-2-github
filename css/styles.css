@@ -54,7 +54,7 @@ img {
 
 }
 
-.nav, .contact ul, .footer-nav{
+.nav, .contact ul, .footer-nav, .info ul {
   list-style-type: none;
 }
 
@@ -80,6 +80,13 @@ img {
 
 .skills{
   background-color: beige;
+}
+
+.imfo {
+  background-color:cornsilk;
+  text-align: center;
+  text-transform: capitalize;
+  
 }
 
 /* Styles for larger screens */
@@ -123,4 +130,3 @@ P.blocktext {
  }
 
 }
-  
