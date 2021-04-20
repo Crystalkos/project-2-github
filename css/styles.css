@@ -64,6 +64,19 @@ img {
 
 /* Styles for larger screens */
 
+@media (min-width 320px){
+
+  .img{
+    min-width:50%;
+  }
+}
+
+P.blocktext {
+  margin-left: auto;
+  margin-right: auto;
+  width: 8em
+
+
   
 @media all and (min-width:768px){
 .main-nav, h1, h2, h3, h4{
@@ -76,7 +89,7 @@ img {
 }
 
  .img{
-   display: 50%;
+   min-width:50%;
  }
 
   
