@@ -46,9 +46,8 @@ color:darkorange;
 border-bottom-color:deeppink;
 }
 
-.skills{
-  background: coral;
-}
+
+
 
 img {
   width:100%;
@@ -64,8 +63,24 @@ img {
   flex-wrap: wrap;
 }
 
+.contact{
+  background-color: blueviolet;
+}
+ .name {
+   background-color: chartreuse;
+ }
+ 
+ .Home {
+   background-color:cadetblue;
+ }
 
+.portfolio{
+  background-color: blanchedalmond;
+}
 
+.skills{
+  background-color: beige;
+}
 
 /* Styles for larger screens */
 
@@ -79,7 +94,6 @@ img {
 P.blocktext {
   margin-left: auto;
   margin-right: auto;
-  width: 8em;
   text-align: center; 
 }
 
