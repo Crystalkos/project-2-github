@@ -12,14 +12,13 @@
 }
 .nav {
   background: rgb(6, 185, 216);
-  display: flex;
   justify-content: space-around;
   font-weight: 700;
   list-style-type: none;
   margin: 0 auto;
   padding: 0;
 }
- h1{
+ h1, h2, h3, h4 {
    text-align: center;
  }
  .nav li {
@@ -38,11 +37,14 @@ img {
 
 }
 
-.nav, .contact ul {
+.nav, .contact ul, .footer-nav{
   list-style-type: none;
 }
 
-
+.footer-nav{
+  display: flex;
+  flex-wrap: wrap;
+}
 
 
 
@@ -51,8 +53,9 @@ img {
 
   
 @media all and (min-width:768px){
-.main-nav {
+.main-nav, h1, h2, h3, h4{
   flex-direction: column;
+    text-align: center;
 }
 
 }
