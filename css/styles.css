@@ -1,5 +1,6 @@
 * { 
   box-sizing: border-box; 
+  margin:0;
   font-family: 'Playfair Display', serif;
 }
 
@@ -23,14 +24,11 @@
   margin: 0 auto;
   padding: 0;
 }
- 
-.h2{
-  text-align: center;
-}
 
 
  h1, h2, h3, h4, .name, .info li{
    text-align: center;
+   display:flex;
    flex-direction: column;
  }
  .nav li {
@@ -53,12 +51,30 @@ border-bottom-color:deeppink;
 
 .container{
   display: flex;
+  flex-direction: column;
 }
 
 
 img {
-  width:100%;
+  margin:0 auto;
+  width:50%;
+  height:50%;
+}
 
+.header {
+  display:flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+}
+
+.p{
+  width:80%;
+  text-align: center;
+  margin:0 auto;
+}
+
+.footer{
+  background-color:beige;
 }
 
 .nav, .contact ul, .footer-nav, .info ul {
@@ -88,15 +104,23 @@ img {
 .portfolio{
   background-color: blanchedalmond;
 }
+.color{
+  background-color:beige;
+}
 
 .skills{
   background-color: beige;
+  list-style:none;
+}
+
+.skills li, p{
+  margin-bottom: 5px;
 }
 
 .info {
-  background-color:cornsilk;
   text-align: center;
   text-transform: capitalize;
+  margin-bottom:20px;
   
 }
 
@@ -107,20 +131,12 @@ img {
     padding: 3em;
   }
 
-
-P.blocktext {
-  display: flex;
-  margin-left: auto;
-  margin-right: auto;
-  text-align: center; 
-}
-
-.container ul{
-  display:block;
-  flex-direction: column;
-  flex-wrap:wrap;
-  height:280px;
-}
+  .container ul{
+    display:block;
+    flex-direction: column;
+    flex-wrap:wrap;
+    height:280px;
+  }
 
 .col {
   display: flex;
