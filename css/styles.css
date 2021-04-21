@@ -24,7 +24,9 @@
   padding: 0;
 }
 
- h1, h2, h3, h4 {
+
+
+ h1, h2, h3, h4, .name, .info li{
    text-align: center;
  }
  .nav li {
@@ -63,8 +65,10 @@ img {
   flex-wrap: wrap;
 }
 
+
 .contact{
   background-color: blueviolet;
+  
 }
  .name {
    background-color: chartreuse;
@@ -82,19 +86,16 @@ img {
   background-color: beige;
 }
 
-.imfo {
+.info {
   background-color:cornsilk;
   text-align: center;
   text-transform: capitalize;
   
 }
 
-/* Styles for larger screens */
-
-
-
   .img{
-    min-width:50%;
+    width:100%;
+    padding: 3em;
   }
 
 
@@ -104,13 +105,34 @@ P.blocktext {
   text-align: center; 
 }
 
+.container {
+  display:inline-flex;
+  flex-direction: column;
+  flex-wrap:wrap;
+  height:280px;
+}
 
+/* Styles for larger screens */
   
-@media all and (min-width:768px){
+@media (min-width:768px){
 .main-nav, h1, h2, h3, h4{
+   height:200px;
   flex-direction: column;
     text-align: center;
+    justify-content: flex-end;
+
 }
+ 
+.name{
+  flex-wrap: wrap;
+  text-align: center;
+}
+.nav {
+  margin-top:3em;
+  flex-direction: row;
+  justify-content: space-between;
+}
+ 
 
 P.blocktext {
   margin-left: auto;
@@ -119,14 +141,38 @@ P.blocktext {
   text-align: left; 
 }
 
- .img{
-   min-width:50%;
+ .col{
+   width:100%;
+   flex-wrap:wrap;
+   flex-direction: column;
+   height:280px;
  }
 
   
-@media all and (min-width:1024px){
+@media (min-width:1024px){
  .main-nav .nav {
+   flex-direction: row;align-items: ;
+ }
+ .h1, h2, h3, h4, .col ul{
    flex-direction: column;
+   flex-wrap: wrap;
  }
 
+
+
+.nav {
+  margin-top:0;
+  align-self: center;
+}
+.nav li{
+  margin-left:.65em;
+  margin-right:.65em;
+}
+
+.primany-col, .col, .div{
+  width:100%;
+  flex-wrap:wrap;
+  flex-direction:column;
+  height:280px;
+}
 }
