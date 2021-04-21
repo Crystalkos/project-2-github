@@ -28,6 +28,8 @@
 
  h1, h2, h3, h4, .name, .info li{
    text-align: center;
+   display: flex;
+   flex-direction: column;
  }
  .nav li {
   padding: 5px 10px 10px 10px;
@@ -39,9 +41,7 @@
   color:rgb(15, 1, 1);
   font-size:1.125em;
   font-weight:300;
-  text-align:center
-  padding: .4em;
-  border-bottom: 1px, soild, grey;
+  text-align:center;
 }
 
 .nav a:hover {
@@ -49,7 +49,9 @@ color:darkorange;
 border-bottom-color:deeppink;
 }
 
-
+.container{
+  display: flex;
+}
 
 
 img {
@@ -97,12 +99,15 @@ img {
 }
 
   .img{
+    display: flex;
+    flex-direction: column;
     width:100%;
     padding: 3em;
   }
 
 
 P.blocktext {
+  display: flex;
   margin-left: auto;
   margin-right: auto;
   text-align: center; 
@@ -115,8 +120,13 @@ P.blocktext {
   height:280px;
 }
 
+.col {
+  display: flex;
+  flex-direction:column;
+}
+
 .phone, .email{
-  text-weight: bold;
+  font-weight: bold;
 }
 
 /* Styles for larger screens */
@@ -159,14 +169,12 @@ P.blocktext {
   
 @media (min-width:1024px){
  .main-nav .nav {
-   flex-direction: row;align-items: ;
+   flex-direction: row; 
  }
  .h1, h2, h3, h4, .col ul{
    flex-direction: column;
    flex-wrap: wrap;
  }
-
-
 
 .nav {
   margin-top:0;
@@ -181,6 +189,5 @@ P.blocktext {
   width:100%;
   flex-wrap:wrap;
   flex-direction:column;
-  height:280px;
-}
+  height:280px; 
 }
