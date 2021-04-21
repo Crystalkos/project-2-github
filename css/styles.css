@@ -23,12 +23,14 @@
   margin: 0 auto;
   padding: 0;
 }
-
+ 
+.h2{
+  text-align: center;
+}
 
 
  h1, h2, h3, h4, .name, .info li{
    text-align: center;
-   display: flex;
    flex-direction: column;
  }
  .nav li {
