@@ -23,6 +23,7 @@
   list-style-type: none;
   margin: 0 auto;
   padding: 0;
+  
 }
 
 
@@ -202,6 +203,11 @@ P.blocktext {
   margin-left:.65em;
   margin-right:.65em;
 }
+
+.profile-image{
+  max-width:50%;
+}
+
 
 .primany-col, .col, .div{
   width:100%;
