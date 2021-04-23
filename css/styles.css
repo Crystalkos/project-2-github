@@ -213,8 +213,17 @@ P.blocktext {
 }
 
 .portfolio .col, .div{
-  width:100%;
   flex-wrap:wrap;
-  flex-direction:column;
-  height:280px; 
+  flex-direction:row;
+}
+
+.img{
+  max-width:50%;
+  flex-wrap: wrap;
+  flex-direction: row;
+}
+
+.section{
+  flex-wrap: wrap;
+  flex-direction: row;
 }
