@@ -135,9 +135,8 @@ img {
     height:280px;
   }
 
-.col {
-  display: flex;
-  flex-direction:column;
+.col{
+  flex-basis: 45%;
 }
 
 .phone, .email{
