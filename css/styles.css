@@ -135,8 +135,11 @@ img {
     height:280px;
   }
 
-.col{
+.col section{
   flex-basis: 45%;
+}
+.col h2{
+  flex-basis: 100%;
 }
 
 .phone, .email{
@@ -186,6 +189,7 @@ flex-basis: 45%;
   flex-basis: 100%;
 }
  .col{
+   justify-content: center;
    width:100%;
    display: flex;
    flex-wrap:wrap;
@@ -224,7 +228,7 @@ flex-basis: 45%;
 }
 
 .img{
-  max-width:50%;
+  max-width:100%;
   flex-wrap: wrap;
   flex-direction: row;
 }
