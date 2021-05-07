@@ -80,6 +80,7 @@ img {
 .footer-nav{
   display: flex;
   flex-wrap: wrap;
+  margin: 10%;
 }
 
 
@@ -104,6 +105,9 @@ img {
   background-color:beige;
 }
 
+.back-to-top{
+  background-color: aquamarine;
+}
 .skills{
   background-color: beige;
   list-style:none;
@@ -199,11 +203,17 @@ flex-basis: 45%;
   flex-basis: 100%;
 }
 
+.profile-image{
+float: right;
+width: 40%;
+}
   
 @media (min-width:1024px){
  .main-nav .nav {
-   flex-direction: row; 
+   flex-direction: row;
  }
+
+ 
  .h1, h2, h3, h4, .col ul{
   flex-direction: column;
    flex-wrap: wrap;
