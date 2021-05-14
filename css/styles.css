@@ -155,6 +155,9 @@ P.blocktext {
   text-align: center; 
 }
 
+footer-nav2{
+  
+}
 /* Styles for larger screens */
   
 @media (min-width:768px){
@@ -209,12 +212,13 @@ width: 40%;
 }
   
 @media (min-width:1024px){
- .main-nav .nav {
+ .main-nav .nav .name h1 {
    flex-direction: row;
+   flex-wrap: wrap;
  }
 
  
- .h1, h2, h3, h4, .col ul{
+ h2, h3, h4, .col ul{
   flex-direction: column;
    flex-wrap: wrap;
  }
@@ -261,4 +265,9 @@ width: 40%;
 
 .col h2 {
   flex-basis: 100%;
+}
+
+.blocktext-intro{
+ margin-left: 10%;
+ text-align: left;
 }
