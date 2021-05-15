@@ -155,9 +155,11 @@ P.blocktext {
   text-align: center; 
 }
 
-footer-nav2{
-  
+
+.footer-nav2 li {
+  display: hidden;
 }
+
 /* Styles for larger screens */
   
 @media (min-width:768px){
@@ -167,7 +169,13 @@ footer-nav2{
     justify-content: flex-end;
 
 }
- 
+ .footer-nav2 li{
+display: block;
+flex-direction: row;
+
+
+ }
+
 .name{
   flex-wrap: wrap;
   text-align: center;
@@ -216,9 +224,14 @@ width: 40%;
    flex-direction: row;
    flex-wrap: wrap;
  }
-
+.header{
+  display: flex;
+}
  
- h2, h3, h4, .col ul{
+.nav li{
+  display:inline-block;
+}
+ h1,h2, h3, h4, .col ul{
   flex-direction: column;
    flex-wrap: wrap;
  }
