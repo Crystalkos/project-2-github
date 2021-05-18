@@ -83,6 +83,10 @@ img {
   margin: 10%;
 }
 
+.footer{
+  display: flex;
+}
+
 
 .contact{
   background-color: blueviolet;
@@ -121,7 +125,6 @@ img {
   text-align: center;
   text-transform: capitalize;
   margin-bottom:20px;
-  
 }
 
   .img{
@@ -157,7 +160,7 @@ P.blocktext {
 
 
 .footer-nav2 li {
-  display: hidden;
+  display:none;
 }
 
 /* Styles for larger screens */
@@ -167,24 +170,33 @@ P.blocktext {
   flex-direction: column;
     text-align: center;
     justify-content: flex-end;
-
+ }
 }
- .footer-nav2 li{
+.back-to-top{
+  display: none;
+}
+.footer-nav2 li{
+  display: inline-block;
+}
+ .footer-nav2{
 display: block;
-flex-direction: row;
-
 
  }
+
+.img{
+  flex-wrap: wrap;
+  flex-direction: row;
+}
 
 .name{
   flex-wrap: wrap;
   text-align: center;
 }
+
 .nav {
   margin-top:3em;
   flex-direction: row;
   justify-content: space-between;
-  
 }
  
 
@@ -224,6 +236,13 @@ width: 40%;
    flex-direction: row;
    flex-wrap: wrap;
  }
+}
+.back-to-top{
+  display: none;
+}
+.footer-nav li{
+  display: inline-block;
+}
 .header{
   display: flex;
 }
