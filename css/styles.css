@@ -16,7 +16,7 @@
   padding: 10px;
   text-align: center;
 }
-.nav, .footer-nav{
+.nav, .footer-nav2{
   background: rgb(6, 185, 216);
   justify-content: space-around;
   font-weight: 700;
@@ -73,15 +73,11 @@ img {
   background-color:beige;
 }
 
-.nav, .contact ul, .footer-nav, .info ul {
+.nav, .contact ul, .footer-nav2, .info ul {
   list-style-type: none;
 }
 
-.footer-nav{
-  display: flex;
-  flex-wrap: wrap;
-  margin: 10%;
-}
+
 
 .footer{
   display: flex;
@@ -166,7 +162,7 @@ P.blocktext {
 /* Styles for larger screens */
   
 @media (min-width:768px){
-.main-nav, h1, h2, h3, h4{
+h1, h2, h3, h4{
   flex-direction: column;
     text-align: center;
     justify-content: flex-end;
@@ -187,8 +183,12 @@ display: block;
   flex-wrap: wrap;
   flex-direction: row;
 }
-
 .name{
+flex-direction: column;
+align-items: center;
+}
+.name, .nav{
+  display: flex;
   flex-wrap: wrap;
   text-align: center;
 }
