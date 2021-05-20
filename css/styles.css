@@ -79,8 +79,9 @@ img {
 
 
 
-.footer{
+footer{
   display: flex;
+  justify-content: space-between;
 }
 
 
@@ -107,6 +108,7 @@ img {
 
 .back-to-top{
   background-color: aquamarine;
+  text-align: right;
 }
 .skills{
   background-color: beige;
@@ -155,7 +157,7 @@ P.blocktext {
 }
 
 
-.footer-nav2 li {
+.footer-nav2 {
   display:none;
 }
 
@@ -167,17 +169,19 @@ h1, h2, h3, h4{
     text-align: center;
     justify-content: flex-end;
  }
-}
+
 .back-to-top{
   display: none;
 }
 .footer-nav2 li{
   display: inline-block;
 }
- .footer-nav2{
-display: block;
-
- }
+.footer-nav2{
+  margin-right: 0%;
+  display: block;
+  text-align: right;
+  justify-content: space-between;
+}
 
 .img{
   flex-wrap: wrap;
@@ -194,11 +198,14 @@ align-items: center;
 }
 
 .nav {
-  margin-top:3em;
+  padding-bottom: 20px;
   flex-direction: row;
   justify-content: space-between;
 }
- 
+ .nav li{
+   display: inline-block;
+   width: auto;
+ }
 
 P.blocktext {
   margin-left: auto;
@@ -229,21 +236,27 @@ flex-basis: 45%;
 .profile-image{
 float: right;
 width: 40%;
+padding-top: 0%;
+ }
 }
   
 @media (min-width:1024px){
- .main-nav .nav .name h1 {
+
+ h1, .nav {
+   padding-bottom: 20px;
    flex-direction: row;
    flex-wrap: wrap;
  }
-}
+
 .back-to-top{
   display: none;
 }
 .footer-nav li{
   display: inline-block;
 }
-.header{
+.name{
+  justify-content: space-between;
+  flex-direction: row;
   display: flex;
 }
  
@@ -257,7 +270,7 @@ width: 40%;
 
 .nav {
   margin-top:0;
-  align-self: center;
+  
 }
 .nav li{
   margin-left:.65em;
@@ -302,4 +315,5 @@ width: 40%;
 .blocktext-intro{
  margin-left: 10%;
  text-align: left;
+ }
 }
